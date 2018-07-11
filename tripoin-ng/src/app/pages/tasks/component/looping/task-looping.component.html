@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-md-12 col-lg-6">
+      <nb-card size="small">
+        <nb-tabset>
+          <nb-tab *ngFor="let topic of topics" tabTitle="{{topic.title}}">
+            <p>{{topic.description}}</p>
+          </nb-tab>
+        </nb-tabset>
+      </nb-card>
+    </div>  
+</div>  

@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-md-12">
+        <nb-card>
+        <nb-card-header>Upload File</nb-card-header>
+        <nb-card-body>
+            <form [formGroup]="form">
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">File Attachment</label>
+                <div class="col-sm-10">
+                <input formControlName="fileAttachment" required type="file" id="inputFileAttachment" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="offset-sm-2 col-sm-10">
+                <button type="submit" class="btn btn-primary" (click)="submit()">Submit</button>
+                </div>
+            </div>
+            </form>
+        </nb-card-body>
+        </nb-card>
+    </div>
+    </div>

@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-md-12">
+      <nb-card>
+        <nb-card-header>Using the Grid</nb-card-header>
+        <nb-card-body>
+          <form [formGroup]="form">
+            <email-component [formControlEmail]="formControlEmail" [placeholder]="placeholder"></email-component>
+            <div class="form-group row">
+              <label for="inputPassword2" class="col-sm-3 col-form-label">Password</label>
+              <div class="col-sm-9">
+                <input formControlName="password" password="password" type="password" class="form-control" id="inputPassword2" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="offset-sm-3 col-sm-9">
+                <button type="submit" class="btn btn-primary" (click)="submit()">Submit</button>
+              </div>
+            </div>
+          </form>
+        </nb-card-body>
+      </nb-card>
+    </div>
+</div>

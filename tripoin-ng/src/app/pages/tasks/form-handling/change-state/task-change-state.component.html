@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="col-md-12">
+      <nb-card>
+        <nb-card-header>Event Handling</nb-card-header>
+        <nb-card-body>
+          <form [formGroup]="form">
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input formControlName="name" required type="text" id="inputName" placeholder="Name" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label">Age</label>
+              <div class="col-sm-10">
+                <input formControlName="age" type="number" class="form-control" id="inputAge">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-2">Gender</label>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <label class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" formControlName="gender" value="Male">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Male</span>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" formControlName="gender" value="Female">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Female</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="offset-sm-2 col-sm-10">
+                <button type="submit" class="btn btn-primary" (click)="submit()">Submit</button>
+              </div>
+            </div>
+          </form>
+        </nb-card-body>
+      </nb-card>
+    </div>
+  </div>
